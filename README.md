@@ -1,6 +1,4 @@
 # Brainwallet Checker
-
-https://brainwalletchecker.github.io
 ===========
 
 JavaScript Client-Side Bitcoin Address Generator
@@ -16,3 +14,4 @@ Notable features
 * Signing and verifying messages with bitcoin address
 * Litecoin support
 
+https://brainwalletchecker.github.io
