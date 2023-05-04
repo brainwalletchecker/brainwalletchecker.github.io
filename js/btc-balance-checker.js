@@ -3,6 +3,7 @@ $(document).ready(function() {
 	var last$inputValue = $input.value;
 	
 	document.getElementById("pass").type = "text";
+    $('#addr').after('<div id="result">...</div>');
 	
 	setInterval(function() {
 	    var newValue = $input.value;
