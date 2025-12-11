@@ -1,5 +1,5 @@
 body {
-  padding-top: 72px;
+  padding-top: 56px;
   padding-bottom: 32px;
   background: #f8f9fa;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -46,8 +46,9 @@ body {
 .navbar-brand { 
   color: #ffffff !important;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   transition: all 0.3s ease;
+  padding: 10px 15px;
 }
 
 .navbar-brand:hover {
@@ -68,12 +69,14 @@ body {
   background: #2c3e50;
   border: none;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-height: 50px;
 }
 
 .navbar-nav > li > a {
   transition: all 0.3s ease;
   border-radius: 4px;
   margin: 0 2px;
+  padding: 10px 15px;
 }
 
 .navbar-nav > li > a:hover {
@@ -222,11 +225,12 @@ textarea.form-control {
 /* Responsive improvements */
 @media (max-width: 768px) {
   body {
-    padding-top: 60px;
+    padding-top: 50px;
   }
   
   .container {
     padding: 15px;
+    margin-top: 10px;
   }
   
   h1, h2 {
@@ -234,7 +238,31 @@ textarea.form-control {
   }
   
   .navbar-brand {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+  }
+  
+  .navbar-nav > li > a {
+    padding: 8px 12px;
+  }
+  
+  .btn-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .btn-group .btn {
+    margin-bottom: 5px;
+  }
+  
+  .form-horizontal .control-label {
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  
+  .col-lg-2, .col-lg-10 {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
