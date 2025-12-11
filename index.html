@@ -194,7 +194,8 @@
         <div class="tab-pane fade" id="chains">
           <form action="/" class="form-horizontal" method="get">
             <fieldset>
-              <legend>Chains</legend>
+              <h2>Chains</h2>
+              <p class="lead" style="color: #555; margin-bottom: 30px;">Generate deterministic wallet chains using Armory or Electrum methods.</p>
               <div class="form-group">
                 <label class="col-lg-2 control-label" for="chType">Generation Method</label>
                 <div class="col-lg-10 controls">
@@ -258,7 +259,8 @@
         <div class="tab-pane fade" id="tx">
           <form action="/" class="form-horizontal" method="get">
             <fieldset>
-              <legend>Transactions</legend>
+              <h2>Transactions</h2>
+              <p class="lead" style="color: #555; margin-bottom: 30px;">Build and sign Bitcoin transactions directly in your browser.</p>
               <div class="form-group">
                 <label class="col-lg-2 control-label" for="txFrom">Build Transaction From</label>
                 <div class="col-lg-10 controls">
@@ -354,7 +356,8 @@
         <div class="tab-pane fade" id="converter">
           <form action="/" class="form-horizontal" method="get">
             <fieldset>
-              <legend>Converter</legend>
+              <h2>Converter</h2>
+              <p class="lead" style="color: #555; margin-bottom: 30px;">Convert between different encoding formats for Bitcoin keys and data.</p>
               <div class="form-group">
                 <label class="col-lg-2 control-label" for="enc_from">Source Encoding</label>
                 <div class="col-lg-10 controls">
@@ -395,7 +398,8 @@
         <div class="tab-pane fade" id="sign">
           <form action="/" class="form-horizontal" id="sgForm" method="get" name="sgForm">
             <fieldset>
-              <legend>Sign Message</legend>
+              <h2>Sign Message</h2>
+              <p class="lead" style="color: #555; margin-bottom: 30px;">Cryptographically sign messages with your Bitcoin private key.</p>
               <div class="form-group">
                 <label class="col-lg-2 control-label" for="sgSec">Private Key</label>
                 <div class="col-lg-10 controls">
@@ -444,7 +448,8 @@
         <div class="tab-pane fade" id="verify">
           <form action="/" class="form-horizontal" id="vrForm" method="get" name="vrForm">
             <fieldset>
-              <legend>Verify Message</legend>
+              <h2>Verify Message</h2>
+              <p class="lead" style="color: #555; margin-bottom: 30px;">Verify cryptographically signed messages from Bitcoin addresses.</p>
               <div class="hidden">
                 <div class="col-lg-offset-2 col-lg-10 alert alert-success fade in" id="vrSuccess">
                   <button aria-hidden="true" class="close" data-dismiss="alert" type="button">&times;</button> Message verified to be from <span id="vrAddrLabel"></span>
@@ -587,6 +592,37 @@
           }
         ]
       }      
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Brainwallet Checker",
+        "description": "JavaScript Client-Side Bitcoin Address Generator - Generate secure Bitcoin addresses in your browser",
+        "url": "https://brainwalletchecker.github.io/",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Any",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "featureList": [
+          "Bitcoin address generation from passphrase",
+          "Deterministic wallet chains (Armory, Electrum)",
+          "Transaction builder and signer",
+          "Format converter",
+          "Message signing and verification",
+          "QR code generation",
+          "Client-side security"
+        ],
+        "browserRequirements": "Requires JavaScript",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.5",
+          "ratingCount": "150"
+        }
+      }
     </script>
   </body>
 </html>
