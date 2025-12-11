@@ -57,7 +57,7 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
-  height: 45px;
+  min-height: 45px;
 }
 
 .navbar-brand-logo {
@@ -132,7 +132,6 @@ body {
 
 .navbar-nav > li > a:hover {
   background-color: rgba(255, 255, 255, 0.2);
-  transform: translateY(-1px);
 }
 
 .navbar-nav > li.active > a {
@@ -293,7 +292,7 @@ textarea.form-control {
   .navbar-brand {
     font-size: 1.05rem;
     padding: 5px 15px;
-    height: 45px;
+    min-height: 45px;
   }
   
   .navbar-brand-logo {
