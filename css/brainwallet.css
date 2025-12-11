@@ -68,7 +68,9 @@ body {
   color: #e0e0e0 !important;
 }
 
-.navbar-left li a { 
+.navbar-left li a,
+.navbar-right li a,
+.navbar-inverse .navbar-nav > li > a { 
   color: #ffffff !important;
   font-weight: 500;
 }
@@ -76,10 +78,6 @@ body {
 .navbar-left li a:hover { 
   color: #e0e0e0 !important;
   background-color: rgba(255, 255, 255, 0.1);
-}
-
-.navbar-right li a {
-  color: #ffffff !important;
 }
 
 .navbar-inverse {
@@ -98,8 +96,8 @@ body {
   box-shadow: none;
 }
 
-.navbar-inverse .navbar-nav > li > a {
-  color: #ffffff;
+.navbar-inverse .navbar-header {
+  float: left;
 }
 
 @media (min-width: 768px) {
@@ -320,19 +318,19 @@ textarea.form-control {
     padding-left: 15px;
     padding-right: 15px;
   }
-}
-
-.navbar-toggle {
-  border-color: rgba(255, 255, 255, 0.3);
-}
-
-.navbar-toggle:hover,
-.navbar-toggle:focus {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.navbar-toggle .icon-bar {
-  background-color: #ffffff;
+  
+  .navbar-toggle {
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .navbar-toggle:hover,
+  .navbar-toggle:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+  }
 }
 
 .lead {
