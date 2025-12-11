@@ -1,0 +1,17 @@
+{
+  "name": "Brainwallet Checker",
+  "short_name": "Brainwallet",
+  "description": "JavaScript Client-Side Bitcoin Address Generator",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#f7931a",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
