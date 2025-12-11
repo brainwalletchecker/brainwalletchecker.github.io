@@ -1,5 +1,5 @@
 body {
-  padding-top: 56px;
+  padding-top: 50px;
   padding-bottom: 32px;
   background: #f8f9fa;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -43,25 +43,40 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+.navbar-inverse .navbar-nav > .dropdown > a .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+
 .navbar-brand { 
   color: #ffffff !important;
   font-weight: 700;
   font-size: 1.25rem;
   transition: all 0.3s ease;
-  padding: 10px 15px;
+  padding: 8px 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-brand-logo {
+  height: 32px;
+  width: 32px;
 }
 
 .navbar-brand:hover {
   color: #e0e0e0 !important;
 }
 
-.navbar-left li:first-child a { 
-  color: #ffffff;
-  font-weight: 600;
+.navbar-left li a,
+.navbar-right li a,
+.navbar-inverse .navbar-nav > li > a { 
+  color: #ffffff !important;
+  font-weight: 500;
 }
 
-.navbar-left li:first-child a:hover { 
-  color: #e0e0e0;
+.navbar-left li a:hover { 
+  color: #e0e0e0 !important;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -72,11 +87,45 @@ body {
   min-height: 50px;
 }
 
+.navbar-inverse .navbar-header {
+  float: left;
+}
+
+.navbar-inverse .navbar-collapse {
+  border-top: 0;
+  box-shadow: none;
+}
+
+.navbar-inverse .navbar-header {
+  float: left;
+}
+
+@media (min-width: 768px) {
+  .navbar-collapse.collapse {
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+  }
+  
+  .navbar-collapse {
+    width: auto;
+    border-top: 0;
+    box-shadow: none;
+  }
+  
+  .navbar-fixed-top .navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
 .navbar-nav > li > a {
   transition: all 0.3s ease;
   border-radius: 4px;
   margin: 0 2px;
-  padding: 10px 15px;
+  padding: 8px 12px;
+  line-height: 20px;
 }
 
 .navbar-nav > li > a:hover {
@@ -239,7 +288,12 @@ textarea.form-control {
   
   .navbar-brand {
     font-size: 1.1rem;
-    padding: 10px 15px;
+    padding: 8px 15px;
+  }
+  
+  .navbar-brand-logo {
+    height: 28px;
+    width: 28px;
   }
   
   .navbar-nav > li > a {
@@ -263,6 +317,19 @@ textarea.form-control {
   .col-lg-2, .col-lg-10 {
     padding-left: 15px;
     padding-right: 15px;
+  }
+  
+  .navbar-toggle {
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .navbar-toggle:hover,
+  .navbar-toggle:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .navbar-toggle .icon-bar {
+    background-color: #ffffff;
   }
 }
 
