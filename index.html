@@ -5,6 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JTF7ZM504D"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JTF7ZM504D');
+    </script>
+    
     <!-- Primary Meta Tags -->
     <title>Brainwallet Checker - JavaScript Client-Side Bitcoin Address Generator</title>
     <meta name="title" content="Brainwallet Checker - JavaScript Client-Side Bitcoin Address Generator" />
@@ -104,7 +114,7 @@
           <form action="/" class="form-horizontal" method="get">
             <fieldset>
               <h1>Brainwallet Generator</h1>
-              <p class="lead" style="color: #555; margin-bottom: 30px;">Generate Bitcoin addresses securely in your browser. Your keys never leave your device.</p>
+              <p class="lead">Generate Bitcoin addresses securely in your browser. Your keys never leave your device.</p>
               <div class="form-group">
                 <label class="col-lg-2 control-label" for="from_pass">Get Address From</label>
                 <div class="col-lg-10 controls">
@@ -125,7 +135,7 @@
                       <button id="togglePass" class="btn btn-info" type="button" aria-label="Toggle password visibility">Toggle</button>
                     </span>
                   </div>
-                  <small id="passHelp" class="form-text text-muted" style="margin-top: 5px;">Use a strong, unique passphrase. Never use common phrases or quotes.</small>
+                  <small id="passHelp" class="form-text text-muted help-text">Use a strong, unique passphrase. Never use common phrases or quotes.</small>
                 </div>
               </div>
               <div class="form-group">
@@ -195,7 +205,7 @@
           <form action="/" class="form-horizontal" method="get">
             <fieldset>
               <h2>Chains</h2>
-              <p class="lead" style="color: #555; margin-bottom: 30px;">Generate deterministic wallet chains using Armory or Electrum methods.</p>
+              <p class="lead">Generate deterministic wallet chains using Armory or Electrum methods.</p>
               <div class="form-group">
                 <label class="col-lg-2 control-label" for="chType">Generation Method</label>
                 <div class="col-lg-10 controls">
@@ -260,7 +270,7 @@
           <form action="/" class="form-horizontal" method="get">
             <fieldset>
               <h2>Transactions</h2>
-              <p class="lead" style="color: #555; margin-bottom: 30px;">Build and sign Bitcoin transactions directly in your browser.</p>
+              <p class="lead">Build and sign Bitcoin transactions directly in your browser.</p>
               <div class="form-group">
                 <label class="col-lg-2 control-label" for="txFrom">Build Transaction From</label>
                 <div class="col-lg-10 controls">
@@ -357,7 +367,7 @@
           <form action="/" class="form-horizontal" method="get">
             <fieldset>
               <h2>Converter</h2>
-              <p class="lead" style="color: #555; margin-bottom: 30px;">Convert between different encoding formats for Bitcoin keys and data.</p>
+              <p class="lead">Convert between different encoding formats for Bitcoin keys and data.</p>
               <div class="form-group">
                 <label class="col-lg-2 control-label" for="enc_from">Source Encoding</label>
                 <div class="col-lg-10 controls">
@@ -399,7 +409,7 @@
           <form action="/" class="form-horizontal" id="sgForm" method="get" name="sgForm">
             <fieldset>
               <h2>Sign Message</h2>
-              <p class="lead" style="color: #555; margin-bottom: 30px;">Cryptographically sign messages with your Bitcoin private key.</p>
+              <p class="lead">Cryptographically sign messages with your Bitcoin private key.</p>
               <div class="form-group">
                 <label class="col-lg-2 control-label" for="sgSec">Private Key</label>
                 <div class="col-lg-10 controls">
@@ -449,7 +459,7 @@
           <form action="/" class="form-horizontal" id="vrForm" method="get" name="vrForm">
             <fieldset>
               <h2>Verify Message</h2>
-              <p class="lead" style="color: #555; margin-bottom: 30px;">Verify cryptographically signed messages from Bitcoin addresses.</p>
+              <p class="lead">Verify cryptographically signed messages from Bitcoin addresses.</p>
               <div class="hidden">
                 <div class="col-lg-offset-2 col-lg-10 alert alert-success fade in" id="vrSuccess">
                   <button aria-hidden="true" class="close" data-dismiss="alert" type="button">&times;</button> Message verified to be from <span id="vrAddrLabel"></span>
@@ -616,12 +626,7 @@
           "QR code generation",
           "Client-side security"
         ],
-        "browserRequirements": "Requires JavaScript",
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.5",
-          "ratingCount": "150"
-        }
+        "browserRequirements": "Requires JavaScript"
       }
     </script>
   </body>

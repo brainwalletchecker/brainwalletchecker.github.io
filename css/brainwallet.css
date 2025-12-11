@@ -250,3 +250,9 @@ textarea.form-control {
   color: #555;
   margin-bottom: 30px;
 }
+
+.help-text {
+  margin-top: 5px;
+  font-size: 0.875rem;
+  color: #6c757d;
+}
