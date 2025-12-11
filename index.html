@@ -2,12 +2,53 @@
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
     <title>Brainwallet Checker - JavaScript Client-Side Bitcoin Address Generator</title>
-    <meta name="description" content="Easily generate secure Bitcoin addresses with our JavaScript Brainwallet Checker. Safe, client-side solutions for your crypto needs!">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="brainwallet" name="author" />
+    <meta name="title" content="Brainwallet Checker - JavaScript Client-Side Bitcoin Address Generator" />
+    <meta name="description" content="Easily generate secure Bitcoin addresses with our JavaScript Brainwallet Checker. Safe, client-side solutions for your crypto needs! Generate Bitcoin addresses from passphrases, private keys, and more." />
+    <meta name="keywords" content="brainwallet, bitcoin, cryptocurrency, address generator, bitcoin wallet, blockchain, crypto wallet, bitcoin address, private key, passphrase, client-side, javascript, crypto security" />
+    <meta name="author" content="Brainwallet Checker" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://brainwalletchecker.github.io/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://brainwalletchecker.github.io/" />
+    <meta property="og:title" content="Brainwallet Checker - JavaScript Client-Side Bitcoin Address Generator" />
+    <meta property="og:description" content="Easily generate secure Bitcoin addresses with our JavaScript Brainwallet Checker. Safe, client-side solutions for your crypto needs!" />
+    <meta property="og:image" content="https://brainwalletchecker.github.io/favicon.svg" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Brainwallet Checker" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://brainwalletchecker.github.io/" />
+    <meta name="twitter:title" content="Brainwallet Checker - JavaScript Client-Side Bitcoin Address Generator" />
+    <meta name="twitter:description" content="Easily generate secure Bitcoin addresses with our JavaScript Brainwallet Checker. Safe, client-side solutions for your crypto needs!" />
+    <meta name="twitter:image" content="https://brainwalletchecker.github.io/favicon.svg" />
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" href="favicon.svg" />
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.json" />
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#f7931a" />
+    <meta name="msapplication-TileColor" content="#f7931a" />
+    
+    <!-- Stylesheets -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/brainwallet.css" rel="stylesheet" />
+    
+    <!-- Scripts -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bitcoinjs-min.js"></script>
@@ -22,6 +63,8 @@
     <script src="js/asn1.js"></script>
     <script src="js/brainwallet.js"></script>
     <script src="js/btc-balance-checker.js"></script>
+    
+    <!-- Google Site Verification -->
     <meta name="google-site-verification" content="DwyZH6qLsbUd_I62pR0XA2z711oqAqtZ1OwhOzWyBvo" />
   </head>
   <body onclick="rng_seed_time();" onkeypress="rng_seed_time();">
@@ -61,6 +104,7 @@
           <form action="/" class="form-horizontal" method="get">
             <fieldset>
               <h1>Brainwallet Generator</h1>
+              <p class="lead" style="color: #555; margin-bottom: 30px;">Generate Bitcoin addresses securely in your browser. Your keys never leave your device.</p>
               <div class="form-group">
                 <label class="col-lg-2 control-label" for="from_pass">Get Address From</label>
                 <div class="col-lg-10 controls">
@@ -76,11 +120,12 @@
                 <label class="col-lg-2 control-label" for="pass">Passphrase</label>
                 <div class="col-lg-10 controls">
                   <div class="input-group">
-                    <input class="form-control" id="pass" placeholder="Long sentence that does not appear in songs or literature. SHA256 used as private key. Should not be empty!" type="password" autofocus/>
+                    <input class="form-control" id="pass" placeholder="Long sentence that does not appear in songs or literature. SHA256 used as private key. Should not be empty!" type="password" autofocus aria-label="Enter your passphrase" aria-describedby="passHelp"/>
                     <span class="input-group-btn">
-                      <button id="togglePass" class="btn btn-info" type="button">Toggle</button>
+                      <button id="togglePass" class="btn btn-info" type="button" aria-label="Toggle password visibility">Toggle</button>
                     </span>
                   </div>
+                  <small id="passHelp" class="form-text text-muted" style="margin-top: 5px;">Use a strong, unique passphrase. Never use common phrases or quotes.</small>
                 </div>
               </div>
               <div class="form-group">
@@ -464,12 +509,27 @@
         </dl>
         
         <hr />
-          <i>Ads:</i> <a href="https://playxo.com/" title="Bitcoin keys with balance" target="_blank">Bitcoin keys with balance</a> | <a href="https://tempmailbox.net/" title="Temp Mail" target="_blank">Temp Mail</a> | <a href="https://anyfp.com/" title="Ai Tools List" target="_blank">Ai Tools</a>
-        <hr>
         <footer>
-          <p>
-            <span class="pull-right"><a href="https://github.com/dvlop/brainwalletX.github.io" target="_blank">Forked GitHub Repository</a> | <a href="https://github.com/brainwallet/brainwallet.github.io" target="_blank">Original GitHub Repository (Out of Service)</a> | Donations: <a href="bitcoin:1DpSSTZhPLYcpCph3NGjgGNVYe3nx6YHNR">1DpSSTZhPLYcpCph3NGjgGNVYe3nx6YHNR</a></span>
-          </p>
+          <div class="row">
+            <div class="col-md-8">
+              <h4 style="color: #2c3e50; font-weight: 700; margin-bottom: 15px;">About Brainwallet Checker</h4>
+              <p style="margin-bottom: 10px;">Brainwallet Checker is a free, open-source, client-side JavaScript Bitcoin address generator. All operations happen in your browser - your private keys never leave your device.</p>
+              <p style="margin-bottom: 10px;"><strong>Important Security Note:</strong> Brainwallets can be vulnerable if weak passphrases are used. Always use strong, unique passphrases that don't appear in any literature or dictionaries.</p>
+            </div>
+            <div class="col-md-4">
+              <h4 style="color: #2c3e50; font-weight: 700; margin-bottom: 15px;">Links</h4>
+              <p style="margin-bottom: 8px;"><a href="https://github.com/dvlop/brainwalletX.github.io" target="_blank" rel="noopener noreferrer">Forked GitHub Repository</a></p>
+              <p style="margin-bottom: 8px;"><a href="https://github.com/brainwallet/brainwallet.github.io" target="_blank" rel="noopener noreferrer">Original Repository</a></p>
+              <p style="margin-bottom: 8px;">Donations: <a href="bitcoin:1DpSSTZhPLYcpCph3NGjgGNVYe3nx6YHNR">1DpSSTZhPLYcpCph3NGjgGNVYe3nx6YHNR</a></p>
+            </div>
+          </div>
+          <hr style="border-top: 1px solid #e0e0e0; margin: 20px 0;" />
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <p style="margin-bottom: 10px;"><i>Sponsored Links:</i> <a href="https://playxo.com/" title="Bitcoin keys with balance" target="_blank" rel="noopener noreferrer">Bitcoin keys with balance</a> | <a href="https://tempmailbox.net/" title="Temp Mail" target="_blank" rel="noopener noreferrer">Temp Mail</a> | <a href="https://anyfp.com/" title="Ai Tools List" target="_blank" rel="noopener noreferrer">Ai Tools</a></p>
+              <p style="margin: 0; color: #777; font-size: 0.9rem;">&copy; 2025 Brainwallet Checker. All rights reserved. Use at your own risk.</p>
+            </div>
+          </div>
         </footer>
       </div>
     </div>
