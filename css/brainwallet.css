@@ -1,5 +1,5 @@
 body {
-  padding-top: 50px;
+  padding-top: 45px;
   padding-bottom: 32px;
   background: #f8f9fa;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -51,17 +51,18 @@ body {
 .navbar-brand { 
   color: #ffffff !important;
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   transition: all 0.3s ease;
-  padding: 8px 15px;
+  padding: 5px 15px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
+  min-height: 45px;
 }
 
 .navbar-brand-logo {
-  height: 32px;
-  width: 32px;
+  height: 28px;
+  width: 28px;
 }
 
 .navbar-brand:hover {
@@ -81,10 +82,10 @@ body {
 }
 
 .navbar-inverse {
-  background: #2c3e50;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   border: none;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  min-height: 50px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  min-height: 45px;
 }
 
 .navbar-inverse .navbar-header {
@@ -124,16 +125,18 @@ body {
   transition: all 0.3s ease;
   border-radius: 4px;
   margin: 0 2px;
-  padding: 8px 12px;
+  padding: 10px 14px;
   line-height: 20px;
+  font-weight: 600;
 }
 
 .navbar-nav > li > a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .navbar-nav > li.active > a {
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.3);
+  font-weight: 700;
 }
 
 .btn {
@@ -274,7 +277,7 @@ textarea.form-control {
 /* Responsive improvements */
 @media (max-width: 768px) {
   body {
-    padding-top: 50px;
+    padding-top: 45px;
   }
   
   .container {
@@ -287,17 +290,19 @@ textarea.form-control {
   }
   
   .navbar-brand {
-    font-size: 1.1rem;
-    padding: 8px 15px;
+    font-size: 1.05rem;
+    padding: 5px 15px;
+    min-height: 45px;
   }
   
   .navbar-brand-logo {
-    height: 28px;
-    width: 28px;
+    height: 26px;
+    width: 26px;
   }
   
   .navbar-nav > li > a {
-    padding: 8px 12px;
+    padding: 10px 12px;
+    font-weight: 600;
   }
   
   .btn-group {
