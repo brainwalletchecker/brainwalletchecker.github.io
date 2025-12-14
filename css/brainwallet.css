@@ -72,7 +72,7 @@ body {
 .navbar-left li a,
 .navbar-right li a,
 .navbar-inverse .navbar-nav > li > a { 
-  color: #ffffff !important;
+  /* color: #ffffff !important; */
   font-weight: 500;
 }
 
