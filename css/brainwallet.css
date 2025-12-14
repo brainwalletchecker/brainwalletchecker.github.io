@@ -49,7 +49,7 @@ body {
 }
 
 .navbar-brand { 
-  color: #ffffff !important;
+  /* color: #ffffff !important; */
   font-weight: 700;
   font-size: 1.15rem;
   transition: all 0.3s ease;
